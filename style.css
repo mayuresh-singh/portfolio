@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
     overflow: hidden;
 }
 
@@ -130,4 +131,18 @@ a{
 
 .io:hover{
     transform: scale(1.2);
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.dot{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
 }
