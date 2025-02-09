@@ -24,6 +24,7 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: cover; 
+    opacity: 0.8;
     z-index: -1;
 }
 
@@ -39,6 +40,7 @@ body {
     background-color: rgba(0, 0, 0, 0.322);
     border-radius: 20px;
     z-index: 1;
+    border: 0.2px solid rgba(255, 255, 255, 0.329);
 }
 
 .img {
@@ -81,6 +83,7 @@ a{
 #play{
     width: 30px;
     
+    
 }
 
 .icon{
@@ -88,23 +91,62 @@ a{
 }
 
 
-.blog{
-    display: flex;
+#blog{
+    display: none;
     width: 400px;
     height: 100px;
     background: rgba(0, 0, 0, 0.308);
     position: absolute;
     justify-content: center;
     align-items: center;
-    bottom: 30px;
-    left: 60px;
+    top: 50%;
+    right: 80px;
     border-radius: 15px;
     backdrop-filter: blur(1px);
+    transform: translateY(-1000px);
+    transition: transform 1s ease;
+    will-change: transform;
+}
+
+#slog{
+    display: none;
+    width: 400px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.295);
+    position: absolute;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    align-items: center;
+    top: 25.5%;
+    left: 150px;
+    border-radius: 15px;
+    backdrop-filter: blur(1px);
+    transform: translateY(1000px);
+    transition: transform 1s ease;
+    will-change: transform;
+}
+
+#glog{
+    display: none;
+    width: 400px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.295);
+    position: absolute;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    align-items: center;
+    bottom: 10%;
+    left: 120px;
+    border-radius: 15px;
+    backdrop-filter: blur(1px);
+    transform: translateX(-1000px);
+    transition: transform 1s ease;
+    will-change: transform;
 }
 
 .log{
     font-family: 'Satoshi', sans-serif !important;
-    color: black;
+    color: rgb(0, 0, 0);
     justify-self: center;
     text-decoration: underline;
     font-size: 40px;
@@ -138,6 +180,8 @@ a{
     justify-content: center;
     align-items: flex-end;
     margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
 }
 .dot{
     width: 18px;
@@ -146,3 +190,4 @@ a{
     background-color: black;
     margin: 10px;
 }
+

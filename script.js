@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-const titleText = "kookie"; // Change this to your desired title
+const titleText = "kookie" + "|"; // Change this to your desired title
 let index = 0;
 let isDeleting = false;
 
@@ -59,3 +59,32 @@ function typeWriter() {
 }
 
 typeWriter();
+
+
+
+let blog = document.getElementById("blog");
+let slog = document.getElementById("slog");
+let glog = document.getElementById("glog");
+function firstFunction(){
+   
+  glog.style.transform = "translateX(-1000px)";
+  slog.style.transform = "translateY(1000px)";
+  blog.style.display = "flex"; 
+  blog.style.transform = blog.style.transform === "translateY(30%)" ? "translateY(-1000px)" : "translateY(30%)";
+}
+
+
+
+function secFunction(){
+  glog.style.transform = "translateX(-1000px)"
+  blog.style.transform = "translateY(-1000px)";
+  slog.style.display = "flex"; 
+  slog.style.transform = slog.style.transform === "translateY(30%)" ? "translateY(1000px)" : "translateY(30%)";
+}
+
+function thirdFunction(){
+  slog.style.transform = "translateY(1000px)";
+  blog.style.transform = "translateY(-1000px)";
+  glog.style.display = "flex"; 
+  glog.style.transform = glog.style.transform === "translateX(30%)" ? "translateX(-1000px)" : "translateX(30%)";
+}
